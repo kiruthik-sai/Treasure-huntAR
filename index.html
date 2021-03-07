@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreasAR Hunt</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=DotGothic16&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <div class="jumbotron jumbotron-fluid p-2">
+        <div class="container" style="text-align:center;">
+            <h1 class="display-3 " style="font-family: 'Cinzel', serif; font-size: 300%;">
+                treasure hunt<span style="font-family: 'DotGothic16', sans-serif; font-size: 1.4em;">AR</span></h1>
+            <p class="lead">Redefining Interactive Education</p>
+            <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#descModalLong"
+                id="rulesButton">
+                Rules: How to play?
+            </button>
+
+        </div>
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="descModalLong" tabindex="-1" role="dialog" aria-labelledby="descModalLongTitle"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="descModalLongTitle">Rules</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Rules:
+                        Go through the concepts in each tile and try to answer the question on the successive tile.
+<br><br>
+                        If not able to answer the question, use the link provided as hints and then proceed with the
+                        answer.
+<br><br>
+                        Do this for each tile till you proceed to the final tile and finish the concept quiz. 
+                        <br> <br>
+                        Best of Luck!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="congrats"><i class="fab fa-address-card"></i></div> -->
+
+    <div class="wrapper">
+        <div class="card">
+            <input type="checkbox" id="card1" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front"
+                    style="background-image: url('https://lh3.googleusercontent.com/proxy/LXwdnLofgNxWnoaNOATZoBlClvxe7mFZ08-XvnZK3rzZXcxYqowrI9HYlnTU31T3Aaoq08Shhw2weXNTH977v_Wo2ko7QufzUaGluekRWP_zLa4x30bgZ-Q3WV8tRAbfgPYMb8rV9ZCwnU4o9tpcGd0');">
+                    <!-- style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')"> -->
+                    <div class="inner">
+                        <h2>Start Here</h2>
+                        <div class="rating">
+                            <i class="fas fa-flag-checkered"></i> </div>
+                        <label for="card1" class="button" aria-hidden="true">
+                            GO
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+
+                        <div class="description">
+                           <p> 
+                               Photosynthesis: <br> <br>
+Photosynthesis is the chemical process by which green plants convert sunlight into sugar. In essence, this process transforms a wave of light energy into chemical potential energy, which the plant then stores in the molecular bonds of sugar molecules. </p>
+                      </div>
+                        <div class="location">Excited to learn?</div>
+                        <label for="card1" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <input type="checkbox" id="card2" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style="background-image:
+                 url('https://i.pinimg.com/originals/96/41/e3/9641e3e173b64a84f9b228badeb059b3.jpg');">
+                    <div class="inner">
+                        <h2>Question 1</h2>
+                        <div class="rating">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <label for="card2" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <!-- question ,text box, button-->
+                        <div class="description" id="description1">
+                            <h5 style="font-family: 'RocknRoll One', sans-serif;"> In the photosynthesis process,
+                                sunlight
+                                gets converted to which chemical compound?(Hint: Click on the link and point at Chocolate)</h5>
+                            <form name="form1" class="form1">
+                                <input class="input" type="text" style="width:135px" id="input1"><br>
+                                <button type="button" class="btn button-submit btn-outline-secondary btn-sm m-2"
+                                    id="submit3" onclick="validateAnswer1()">Submit</button>
+
+                                <a href="https://go.echoar.xyz/sxoH"
+                                    class="btn button-hint btn-info btn-lg" tabindex="-1" role="button"
+                                    aria-disabled="true">Hint</a>
+                            </form>
+                        </div>
+                        <div class="location">Question 1</div>
+                        <label for="card2" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <input type="checkbox" id="card3" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front"
+                    style="background-image:
+                    url('https://images.unsplash.com/photo-1527567018838-584d3468eb85?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHdoaXRlJTIwbWluaW1hbHxlbnwwfHwwfA%3D%3D&w=1000&q=80');">
+                    <div class="inner">
+                        <h2>Question 2</h2>
+                        <div class="rating">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <label for="card3" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <!-- question ,text box, button-->
+                        <div class="description" id="description2">
+                            <h5 style="font-family: 'RocknRoll One', sans-serif;">What is the molecule of
+                                chloroplast which absorbs the light?(Hint: Click on the link and point at green box)</h5>
+                            <form name="form2" class="form2">
+                                <input class="input" type="text" style="width:135px" id="input2"><br>
+                                <button type="button" class="btn button-submit btn-outline-secondary btn-sm m-2"
+                                    id="submit2" onclick="validateAnswer2()">Submit</button>
+
+                                <a href="https://assets.teenvogue.com/photos/5ab0372fee82aa5c3c84adcf/16:9/w_2560%2Cc_limit/zac.jpg"
+                                    class="btn button-hint btn-info btn-lg" tabindex="-1" role="button"
+                                    aria-disabled="true">Hint</a>
+                            </form>
+                        </div>
+                        <div class="location">Question 2</div>
+                        <label for="card3" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <input type="checkbox" id="card4" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style="background-image:
+                    url('https://i.pinimg.com/originals/28/4f/ba/284fba321e7cd0282ab5b209c4174d15.jpg');">
+                    <div class="inner">
+                        <h2>Question 3</h2>
+                        <div class="rating">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <label for="card4" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <!-- question ,text box, button-->
+                        <div class="description" id="description3">
+                            <h5 style="font-family: 'RocknRoll One', sans-serif;">What are energy carrying molecules
+                                called?(Hint: Click on the link and point at Sun image)</h5>
+                            <form name="form3" class="form3">
+                                <input class="input" type="text" style="width:135px" id="input3"><br>
+                                <button type="button" class="btn button-submit btn-outline-secondary btn-sm m-2"
+                                    id="submit3" onclick="validateAnswer3()">Submit</button>
+
+                                <a href="https://assets.teenvogue.com/photos/5ab0372fee82aa5c3c84adcf/16:9/w_2560%2Cc_limit/zac.jpg"
+                                    class="btn button-hint btn-info btn-lg" tabindex="-1" role="button"
+                                    aria-disabled="true">Hint</a>
+                            </form>
+                        </div>
+                        <div class="location">Question 3</div>
+                        <label for="card4" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <input type="checkbox" id="card5" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front"
+                    style="background-image:
+            url('https://previews.123rf.com/images/porechenskaya/porechenskaya1703/porechenskaya170300454/74135303-pink-roses-on-white-background-minimalist-fashion-details.jpg');">
+                    <div class="inner">
+                        <h2>Question 4</h2>
+                        <div class="rating">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <label for="card5" class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                        <!-- question ,text box, button-->
+                        <div class="description" id="description4">
+                            <h5 style="font-family: 'RocknRoll One', sans-serif;">Which chemical compound does the plant
+                                use the stored chemical energy of ATP to make glucose from?(Hint: Click on the link and point at Nose image)</h5>
+                            <form name="form4" class="form4">
+                                <input class="input" type="text" style="width:135px" id="input4"><br>
+                                <button type="button" class="btn button-submit btn-outline-secondary btn-sm m-2"
+                                    id="submit4" onclick="validateAnswer4()">Submit</button>
+
+                                <a href="https://go.echoar.xyz/bu36"
+                                    class="btn button-hint btn-info btn-lg" tabindex="-1" role="button"
+                                    aria-disabled="true">Hint</a>
+                            </form>
+                        </div>
+                        <div class="location">Question 4</div>
+                        <label for="card5" class="button return" aria-hidden="true">
+                            <i class="fas fa-arrow-left"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+
+
+<!-- <div class="info">
+                        <span>5</span>
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                            <span>abcd</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span>5</span>
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                            <span>abcd</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span>5</span>
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                            <span>abcd</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span>5</span>
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                            <span>abcd</span>
+                        </div>
+                    </div> -->

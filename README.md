@@ -18,6 +18,14 @@ To utilize AR technologies to make education interactive and exciting
 
     
 ## Results
+Images of homepage in mobile screen resolution:
+1)
+![image](https://user-images.githubusercontent.com/46451487/110257758-3eff1780-7f6d-11eb-9b28-87c44b781228.png)
+2)
+![image](https://user-images.githubusercontent.com/46451487/110257822-81c0ef80-7f6d-11eb-8b22-ab8d8e96b90d.png)
+
+
+
 
 Fully functional webpage with Interactive quiz game successfully works.
 
